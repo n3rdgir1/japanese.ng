@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { QuizComponent } from './quiz/quiz/quiz.component';
+import { QuizComponent } from './components/quiz/quiz.component';
 
 @NgModule({
   declarations: [
