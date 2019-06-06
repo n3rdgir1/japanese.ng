@@ -4,7 +4,7 @@
     <span class="hiragana">Hiragana</span>
     <span class="katakana">Katakana</span>
   </li>
-  <li *ngFor="let k of kanas">
+  <li *ngFor="let k of (kanas | async)">
     <span class="romanji">{{k.romanji}}</span>
     <span class="hiragana">{{k.hiragana}}</span>
     <span class="katakana">{{k.katakana}}</span>

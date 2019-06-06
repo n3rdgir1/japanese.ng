@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { of } from 'rxjs/internal/observable/of';
 
 @Injectable({
   providedIn: 'root'
@@ -8,7 +9,7 @@ export class KanasService {
   constructor() { }
 
   get() {
-    return [
+    return of([
       {romanji: 'a'  , hiragana: 'あ', katakana: 'ア'},
       {romanji: 'i'  , hiragana: 'い', katakana: 'イ'},
       {romanji: 'u'  , hiragana: 'う', katakana: 'ウ'},
@@ -80,6 +81,6 @@ export class KanasService {
       {romanji: 'ze' , hiragana: 'ぜ', katakana: 'ゼ'},
       {romanji: 'zo' , hiragana: 'ぞ', katakana: 'ゾ'},
       {romanji: 'n'  , hiragana: 'ん', katakana: 'ン'},
-    ];
+    ]);
   }
 }

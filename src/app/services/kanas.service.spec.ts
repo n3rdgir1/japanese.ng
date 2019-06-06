@@ -6,7 +6,10 @@ describe('KanasService', () => {
     service = new KanasService();
   });
 
-  it('should get 70 kanas', () => {
-    expect(service.get().length).toEqual(71);
+  it('should get 70 kanas', done => {
+    service.get().subscribe(kanas => {
+      expect(kanas.length).toEqual(71);
+      done();
+    });
   });
 });
