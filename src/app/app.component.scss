@@ -1,0 +1,30 @@
+.nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav {
+  display: inline-flex;
+  padding: 0 5em;
+  align-items: center;
+
+  & > * {
+    font-size: 3em;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    margin: .25em;
+
+
+    &.active {
+      color: purple;
+    }
+    &.hover, &.visited {
+      color: black;
+    }
+  }
+
+  a {
+    font-size: 2em;
+  }
+}
